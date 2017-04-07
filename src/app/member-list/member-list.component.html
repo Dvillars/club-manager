@@ -1,0 +1,11 @@
+<h3>
+  member-list works!
+</h3>
+
+<div *ngFor='let member of members | async'>
+  <div class="well">
+    <h4>screenName = {{member.screenName}}</h4>
+    <p>role = {{member.role}}</p>
+    <div class='hover' (click)="goToProfilePage(member)">view profile</div>
+  </div>
+</div>

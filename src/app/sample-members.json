@@ -1,0 +1,17 @@
+{ "members": [{
+    "screenName": "paw",
+    "firstName": "robert",
+    "lastName": "cook",
+    "role": "member"
+    }, {
+    "screenName": "mamaw",
+    "firstName": "doris",
+    "lastName": "cook",
+    "role": "member"
+      }, {
+    "screenName": "D$",
+    "firstName": "derek",
+    "lastName": "villars",
+    "role": "admin"
+  }]
+}
