@@ -1,17 +1,17 @@
 { "members": [{
-    "screenName": "paw",
-    "firstName": "robert",
-    "lastName": "cook",
-    "role": "member"
+    "screenName": "Willim",
+    "weapon": "sword and shield",
+    "armor": "sleep set",
+    "role": "cutters"
     }, {
-    "screenName": "mamaw",
-    "firstName": "doris",
-    "lastName": "cook",
-    "role": "member"
+    "screenName": "goldby",
+    "weapon": "light bow gun",
+    "armor": "element set",
+    "role": "cutters"
       }, {
     "screenName": "D$",
-    "firstName": "derek",
-    "lastName": "villars",
-    "role": "admin"
+    "weapon": "hunting horn",
+    "armor": "melody set",
+    "role": "breakers"
   }]
 }

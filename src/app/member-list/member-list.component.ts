@@ -14,8 +14,8 @@ import { MemberService } from '../member.service';
 
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
-  filterByPledged: string = "allMembers";
   currentRoute: string;
+  filterByRole;
 
   constructor(
     private router: Router,
@@ -25,6 +25,10 @@ export class MemberListComponent implements OnInit {
   ngOnInit() {
     this.members = this.memberService.getMembers();
     this.currentRoute = this.router.url;
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByRole = optionFromMenu;
   }
 
   goToProfilePage(clickedMember) {

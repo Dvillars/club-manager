@@ -1,0 +1,28 @@
+<p>
+  new-member works!
+</p>
+
+<form class="panel panel-primary">
+  <div class="panel-heading">
+    blabla
+  </div>
+  <div class="panel-body">
+  <div class="form-group">
+    <label>ScreenName: </label>
+    <input name='title' class="form-control" type="text" #newMemberScreenName>
+  </div>
+  <div class="form-group">
+    <label>Weapon: </label>
+    <input name='raiser' class="form-control" type="text" #newMemberWeapon>
+  </div>
+  <div class="form-group">
+    <label>Armor: </label>
+    <input name='armor' class="form-control" type="text" #newMemberArmor>
+  </div>
+  <div class="form-group">
+    <label>Role (breakers or cutters): </label>
+    <input name='role' class="form-control" type="text" #newMemberRole>
+  </div>
+  <button class="btn right btn-danger" (click)="createNewMember(newMemberScreenName.value, newMemberWeapon.value, newMemberArmor.value, newMemberRole.value); newMemberScreenName.value=''; newMemberWeapon.value=''; newMemberArmor.value=''; newMemberRole.value ='';">Add New Member</button>
+</div>
+</form>

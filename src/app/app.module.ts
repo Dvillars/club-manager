@@ -3,11 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
-
-import { AppComponent } from './app.component';
-import { MemberListComponent } from './member-list/member-list.component';
-import { MemberProfileComponent } from './member-profile/member-profile.component';
-
 import { masterFirebaseConfig } from './api-key';
 import { AngularFireModule } from 'angularfire2';
 
@@ -18,11 +13,21 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
+import { AppComponent } from './app.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { MemberProfileComponent } from './member-profile/member-profile.component';
+import { AboutComponent } from './about/about.component';
+import { RolePipe } from './role.pipe';
+import { NewMemberComponent } from './new-member/new-member.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MemberListComponent,
-    MemberProfileComponent
+    MemberProfileComponent,
+    AboutComponent,
+    RolePipe,
+    NewMemberComponent
   ],
   imports: [
     BrowserModule,

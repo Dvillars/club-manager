@@ -1,8 +1,8 @@
 export class Member {
   constructor(
-    public firstName: string,
-    public lastName: string,
     public screenName: string,
+    public armor: string,
+    public weapon: string,
     public role: string
   ) { }
 }
