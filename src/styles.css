@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-.hover:hover {
-  color:  #2a52be;
-}
 
 .right {
   float: right;
@@ -12,5 +9,9 @@ html {
 }
 
 html body {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(42, 82, 190, 0.3);
+}
+
+html body h1 {
+  color: white;
 }

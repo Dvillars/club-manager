@@ -1,10 +1,6 @@
-<p>
-  new-member works!
-</p>
-
 <form class="panel panel-primary">
   <div class="panel-heading">
-    blabla
+    Add New Member
   </div>
   <div class="panel-body">
   <div class="form-group">
@@ -23,6 +19,6 @@
     <label>Role (breakers or cutters): </label>
     <input name='role' class="form-control" type="text" #newMemberRole>
   </div>
-  <button class="btn right btn-danger" (click)="createNewMember(newMemberScreenName.value, newMemberWeapon.value, newMemberArmor.value, newMemberRole.value); newMemberScreenName.value=''; newMemberWeapon.value=''; newMemberArmor.value=''; newMemberRole.value ='';">Add New Member</button>
+  <button href='/' class="btn right btn-danger" (click)="createNewMember(newMemberScreenName.value, newMemberWeapon.value, newMemberArmor.value, newMemberRole.value); newMemberScreenName.value=''; newMemberWeapon.value=''; newMemberArmor.value=''; newMemberRole.value ='';">Add New Member</button>
 </div>
 </form>

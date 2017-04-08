@@ -22,4 +22,19 @@ export class MemberService {
   addMember(newMember: Member) {
     this.members.push(newMember);
   }
+
+  updateMember(changingMember){
+    var albumEntryInFirebase = this.getMemberById(changingMember.$key);
+    albumEntryInFirebase.update({
+      screenName: changingMember.screenName,
+      weapon: changingMember.weapon,
+      armor: changingMember.armor,
+      role: changingMember.role
+    });
+  }
+
+  deleteMember(deleteingMember){
+    var playerEntryInFirebase = this.getMemberById(deleteingMember.$key);
+    playerEntryInFirebase.remove();
+  }
 }

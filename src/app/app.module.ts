@@ -19,6 +19,7 @@ import { MemberProfileComponent } from './member-profile/member-profile.componen
 import { AboutComponent } from './about/about.component';
 import { RolePipe } from './role.pipe';
 import { NewMemberComponent } from './new-member/new-member.component';
+import { UpdateMemberComponent } from './update-member/update-member.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NewMemberComponent } from './new-member/new-member.component';
     MemberProfileComponent,
     AboutComponent,
     RolePipe,
-    NewMemberComponent
+    NewMemberComponent,
+    UpdateMemberComponent
   ],
   imports: [
     BrowserModule,
